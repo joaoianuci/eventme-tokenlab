@@ -1,0 +1,164 @@
+div#schedule {
+  position: relative;
+}
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+
+div#schedule > div.notifications {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 64px;
+  right: 0px;
+  width: 400px;
+  background-color: #FFF;
+  padding: 2% 4%;
+  border: solid 1px #e5e7eb;
+  z-index: 1;
+}
+
+div.notifications > h1 {
+  font-size: 36px;
+  color: #000;
+  font-weight: bold;
+}
+
+div.notifications > div.event > div.choice{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+div.notifications > div.event > header > h1{
+  font-size: 24px;
+}
+
+div.notifications > div.event > p{
+  font-size: 18px;
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+}
+
+
+div#schedule > div.notifications[active="false"] {
+  display: none;
+}
+
+div.events {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+div.event,
+form.event {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  padding-top: 10px;
+}
+
+div.event,
+form.event > header {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.event,
+form.event > header > h1 {
+  font-size: 36px;
+  color: #000;
+  font-weight: bold;
+}
+
+div.event,
+form.event > p {
+  font-size: 18px;
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+}
+
+div.event-footer {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+div.event,
+form.event > input {
+  border: none;
+  font-size: 18px;
+  color: rgb(77, 77, 77);
+  font-weight: bold;
+  text-indent: 0px;
+  margin: 0px;
+  padding: 4px 0px;
+}
+
+div.event,
+form.event > header > input {
+  font-size: 36px;
+  color: #000;
+  font-weight: bold;
+  text-indent: 0px;
+  margin: 0px;
+  padding: 2px 0px;
+  border: none;
+}
+
+div.event-footer > div.start,
+div.end {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+div.event-footer > div > span {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+div.event-footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6366f1;
+  padding: 5px;
+}
+
+div.event-footer > div > h1 {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div.event,
+form.event > header > div.manage-event {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+svg.icon {
+  width: 30px;
+  height: 30px;
+  color: #6366f1;
+  cursor: pointer;
+}
+
+#addicon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 7%;
+  height: 7%;
+  color: #6366f1;
+  cursor: pointer;
+}

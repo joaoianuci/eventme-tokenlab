@@ -1,0 +1,65 @@
+div.floating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--white);
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+div[active="false"]{
+  display: none;
+}
+
+
+div.floating::-webkit-scrollbar {
+  display: none;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+div.floating > h1 {
+  font-size: 36px;
+  color: #06002d;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+div.floating > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 30px;
+  padding-bottom: 100px;
+}
+
+div.floating > form > label {
+  font-size: 18px;
+  color: #06002d;
+  font-weight: bold;
+}
+
+div.floating > form > input {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  width: 90%;
+  height: 75px;
+  border: none;
+  border-radius: 30px;
+  background-color: #e8e8f0;
+  margin: 20px 0px;
+}
+
+#addiconcheck{
+  width: 40px;
+  height: 40px;
+  color: #6366f1;
+  cursor: pointer;
+}
